@@ -40,7 +40,32 @@ week04/
 
 Note: `beam_stats.py` reads `../week03/beam_results.csv`. The CSV file is stored in the `week03` folder.
 
-## 5. Learning Progress
+## 5. How to Run
+
+Install the libraries, then run the scripts from the `week04` folder. Running them here matters, because `beam_stats.py` uses the relative path `../week03/beam_results.csv` to find the CSV.
+
+```text
+py -m pip install numpy matplotlib pandas
+py sine_curvature.py
+py beam_stats.py
+```
+
+## 6. What the Plots Show
+
+`sine_curvature.png` has two subplots in one figure:
+
+- The sine trajectory y = sin(x)
+- The curvature κ of that curve
+
+Check point: at the sample closest to x = π/2, κ ≈ 1.
+
+## 7. Units
+
+- x is in radians.
+- Curvature κ is in 1/length.
+- Deflection is in meters (`deflection_m`) and millimeters (`deflection_mm`).
+
+## 8. Learning Progress
 
 ### Week 04
 
@@ -53,6 +78,6 @@ Note: `beam_stats.py` reads `../week03/beam_results.csv`. The CSV file is stored
 - [x] Visualize the sine curve and its curvature in separate subplots.
 - [x] Read CSV files with Pandas and calculate mean, minimum, maximum, and non-null count.
 
-## 6. Future Direction
+## 9. Future Direction
 
 Continue developing Python skills for engineering and autonomous driving applications. Build on the current NumPy, Matplotlib, and Pandas foundations through further numerical analysis, data processing, and practical vehicle-related exercises.
